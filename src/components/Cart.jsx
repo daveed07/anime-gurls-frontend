@@ -8,10 +8,7 @@ const API = "https://anime-gurls-backend.herokuapp.com/api/v1/imgs/upload"
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const handleUpload = () => {
-    cart.forEach(async (item) => {
-      const response = await usePostImage(API, { girl: item });
-      console.log(response);
-    })
+    
     console.log("test")
   }
   return (
