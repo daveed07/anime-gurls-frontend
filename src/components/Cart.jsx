@@ -10,8 +10,8 @@ const Cart = () => {
   const handleUpload = () => {
     cart.forEach(async (item) => {
       const response = await usePostImage(API, { girl: item });
-      console.log("test");
     })
+    console.log("test");
   }
   return (
     <div className="cart-container">
