@@ -12,6 +12,7 @@ const Cart = () => {
       const response = await usePostImage(API, { girl: item });
       console.log(response);
     })
+    console.log("test")
   }
   return (
     <div className="cart-container">
