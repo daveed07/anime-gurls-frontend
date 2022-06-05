@@ -3,8 +3,21 @@ import { store } from "../redux/store";
 
 const Form = () => {
   const handleSubmit = ({ info }) => {
-    store.dispatch({ type: "ADD_IMAGE", payload: info });
-    console.log(info);
+    const item = {
+      name: info.name,
+      anime: info.anime,
+      url: info.url,
+      is_nsfw: info.is_nsfw,
+      tags: str.trim().split(","),
+      properties: {
+        hairColor: info.hairColor,
+        hairLength: info.hairLength,
+        breasts: info.breasts,
+        eyeColor: info.eyeColor,
+      }
+    }
+    store.dispatch({ type: "ADD_IMAGE", payload: item });
+    console.log(item);
   }
 
   return (
@@ -49,7 +62,6 @@ const Form = () => {
         <button type="button" onClick={() => {
           handleSubmit({
             info: {
-              id: Math.floor(Math.random() * 100),
               name: document.getElementById("name").value,
               anime: document.getElementById("anime").value,
               url: document.getElementById("url").value,
