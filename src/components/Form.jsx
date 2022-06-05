@@ -8,7 +8,7 @@ const Form = () => {
       anime: info.anime,
       url: info.url,
       is_nsfw: info.is_nsfw,
-      tags: str.trim().split(","),
+      tags: info.tags.trim().split(","),
       properties: {
         hairColor: info.hairColor,
         hairLength: info.hairLength,
