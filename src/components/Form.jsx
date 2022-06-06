@@ -7,12 +7,12 @@ const Form = () => {
       name: info.name,
       anime: info.anime,
       url: info.url,
-      is_nsfw: info.is_nsfw,
+      is_nsfw: info.isNSFW,
       tags: info.tags.trim().split(","),
       properties: {
         hairColor: info.hairColor,
         hairLength: info.hairLength,
-        breasts: info.breasts,
+        breasts: info.breast,
         eyeColor: info.eyeColor,
       }
     }
@@ -70,7 +70,7 @@ const Form = () => {
               hairLength: document.getElementById("hair-length").value,
               eyeColor: document.getElementById("eye-color").value,
               breast: document.getElementById("breast").value,
-              isNSFW: document.getElementById("is-nsfw").checked,
+              isNSFW: document.getElementById("is-nsfw").checked ? true : false,
             }
           });
         }}>Submit</button>

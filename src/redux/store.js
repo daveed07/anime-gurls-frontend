@@ -16,7 +16,7 @@ const reducer = (state = initialState, action) => {
     case "REMOVE_IMAGE":
       return {
         ...state,
-        cart: state.cart.filter((item) => item.id !== action.payload),
+        cart: state.cart.filter((item) => item.url !== action.payload),
       };
     default:
       return state;

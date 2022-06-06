@@ -4,7 +4,7 @@ import "../styles/index.css";
 
 const CartItem = ({ image }) => {
   const handleRemove = () => {
-    store.dispatch({ type: "REMOVE_IMAGE", payload: image.id });
+    store.dispatch({ type: "REMOVE_IMAGE", payload: image.url });
   }
   return (
     <div className="cart-item">
