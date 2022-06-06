@@ -45,7 +45,11 @@ const Form = () => {
         </div>
         <div className="form-group">
           <label htmlFor="hair-length">Hair Length</label>
-          <input type="text" name="hair-length" id="hair-length" />
+          <select name="hair-length" id="hair-length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+          </select>
         </div>
         <div className="form-group">
           <label htmlFor="eye-color">Eye Color</label>
@@ -53,7 +57,12 @@ const Form = () => {
         </div>
         <div className="form-group">
           <label htmlFor="breast">Breast</label>
-          <input type="text" name="breast" id="breast" />
+          <select name="breast" id="breast">
+            <option value="flat">Flat</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
         </div>
         <div className="form-group">
           <label htmlFor="is-nsfw">NSFW</label>

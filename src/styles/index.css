@@ -1,5 +1,5 @@
 * {
-  box-sizing: 0;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -36,6 +36,14 @@ p, label {
   margin-bottom: 16px
 }
 .form-group input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  padding: 8px;
+  width: 100%;
+}
+.form-group select {
+  background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1.2rem;
