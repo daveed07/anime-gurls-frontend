@@ -47,7 +47,9 @@ const Form = () => {
           <label htmlFor="hair-length">Hair Length</label>
           <select name="hair-length" id="hair-length">
             <option value="short">Short</option>
-            <option value="medium">Medium</option>
+            <option value="shoulder">Shoulder</option>
+            <option value="mid-back">Mid Back</option>
+            <option value="waist">Waist</option>
             <option value="long">Long</option>
           </select>
         </div>
