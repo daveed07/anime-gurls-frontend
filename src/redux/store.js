@@ -4,7 +4,7 @@ import storage from "redux-persist/lib/storage";
 
 const initialState = {
   cart: [],
-}
+};
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -18,10 +18,15 @@ const reducer = (state = initialState, action) => {
         ...state,
         cart: state.cart.filter((item) => item.url !== action.payload),
       };
+    case "CLEAR_CART":
+      return {
+        ...state,
+        cart: [],
+      }
     default:
       return state;
   }
-}
+};
 
 const persistConfig = {
   key: "root",
